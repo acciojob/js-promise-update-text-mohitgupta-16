@@ -3,11 +3,13 @@
 const output = documen.querySelector("#output");
 
 function func() {
-	return Promise(resolve) {
+	return new Promise(resolve) {
 		setTimeout(() => {
 			resolve("Hello,world!");
 		}, 1000);
 	}
 }
 
-output.textContent = func();
+func().then((message) => {
+  output.textContent = message;
+});
