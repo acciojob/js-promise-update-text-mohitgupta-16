@@ -1,6 +1,6 @@
 //your JS code here. If required.
 
-const output = documen.querySelector("#output");
+const output = document.querySelector("#output");
 
 function func() {
 	return new Promise(resolve) {
